@@ -1,0 +1,30 @@
+name = ISU Template with Menu
+description = Subtheme of ISU base theme with a drop-down menu
+core = 7.x
+base theme = isu_template_base
+
+engine = phptemplate
+
+; ISU template regions
+regions[site_search] = Search Block
+regions[right_corner] = Right Corner
+regions[sidebar_first] = Sidebar First
+regions[sidebar_right] = Sidebar Right
+regions[help] = Help
+regions[above_content] = Above Content
+regions[titlebar] = Titlebar
+regions[content] = Content
+regions[footer] = Footer
+
+; Added Region for Main Menu
+regions[main-menu] = Main Menu
+
+
+; Stylesheets
+stylesheets[all][] = menu.css
+
+; Features
+features[] = favicon
+features[] = name
+features[] = slogan
+features[] = logo

@@ -1,0 +1,111 @@
+/*=======================================================*/
+/*== ISU Navigation =====================================*/
+/*=======================================================*/
+
+#main-nav{
+    overflow: visible;
+}
+
+#ribbon #main-nav .content > ul{
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0px;
+    text-align: center;
+}
+
+#ribbon #main-nav .content > ul > li{
+    border-left: 1px solid #7e0e19;
+    display: inline-block;
+    position: relative;
+}
+
+#ribbon #main-nav .content > ul > li > a{
+    border-left: 1px solid #ac3440;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    min-width: 85px; /* was 85px, but our titles were too long */
+    max-width: 86px;
+    outline: none;
+    padding: 4px 36px 6px;
+    text-decoration: none;
+    text-shadow: 0 0 0 #fff, -1px 1px 3px #333;
+}
+
+#ribbon #main-nav .content > ul > li:hover > a{
+    background: #c31b2a linear-gradient(#a61a26, #af1f2d);
+    position: relative;
+    z-index: 110;
+}
+
+#ribbon #main-nav .content > ul > li:hover > a[href="javascript:;"]{
+    cursor: default;
+}
+
+#ribbon #main-nav .content > ul > li:last-child{
+    border-right: 1px solid #ac3440;
+}
+
+#ribbon #main-nav .content > ul > li:last-child > a{
+    border-right: 1px solid #7e0e19;
+}
+
+#ribbon #main-nav .content > ul > li > ul{
+	background: #e4dfcf linear-gradient(#f2f2f2, #e4dfcf);
+	background: #e4dfcf;
+	background: #e4dfcf -moz-linear-gradient(#f2f2f2, #e4dfcf);
+	background: #e4dfcf -webkit-linear-gradient(#f2f2f2, #e4dfcf);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f2f2f2, endColorstr=#d4dfcf);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 4px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+    z-index: 100;
+}
+
+#ribbon #main-nav .content ul li.leaf {
+	list-style: none;
+}
+
+#ribbon #main-nav .content > ul > li:hover > ul{
+    display: block;
+}
+
+#ribbon #main-nav .content > ul > li > ul > li > a{
+    color: #444;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+#ribbon #main-nav .content > ul > li > ul > li > a:hover{
+    background: #bebbaf;
+    color: #222;
+}
+
+/*****  Fix for nameplate on retina displays (iOS, Retina MBP) *****/
+#ribbon h1 > a {
+	height: 31px;
+}
+
+/* Override Drupal's ui li.collapsed and expanded */
+#ribbon #main-nav ul li.collapsed {
+    list-style: none;
+    list-style-type: none;
+    list-style-image: none;
+}
+#ribbon	#main-nav ul li.expanded {
+    list-style:	none;
+    list-style-type: none;
+    list-style-image: none;
+}
+
